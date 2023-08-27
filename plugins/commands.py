@@ -23,12 +23,12 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/LazyDeveloper')
+                InlineKeyboardButton('⍰ Uᴘᴅᴀᴛᴇs ⌫', url='https://t.me/LazyDeveloper')
             ],
             [
-                InlineKeyboardButton('🙆🏻 Help 🦾', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('➥ Hᴇʟᴘ ⌬', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ],[
-            InlineKeyboardButton('Watch Tutorial', url='https://youtube.com/LazyDeveloper')
+            InlineKeyboardButton('Jᴏɪɴ Hᴇʀᴇ', url='https://youtube.com/MOVIES_PROVIDE')
             ],
             [
                 InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
@@ -47,15 +47,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕↖️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘs ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🧞‍♀️ Search 🧐', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/LazyDeveloper')
+            InlineKeyboardButton('🧞‍♀️ Sᴇᴀʀᴄʜ ✪', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('✇ Uᴘᴅᴀᴛᴇs ✇', url='https://t.me/MOVIES_PROVIDE')
             ],[
-            InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
-            InlineKeyboardButton('♥️ About ♥️', callback_data='about')
+            InlineKeyboardButton('♻ Hᴇʟᴘ ♻', callback_data='help'),
+            InlineKeyboardButton('⍟ Aʙᴏᴜᴛ ⍟', callback_data='about')
             ],[
-            InlineKeyboardButton('Watch Tutorial', url='https://youtube.com/LazyDeveloper')
+            InlineKeyboardButton('⌬ Mᴏᴠɪᴇs Rᴇϙᴜᴇsᴛ Gʀᴏᴜᴘ ⌬', url='https://t.me/MOVIES_PROVIDE2')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -100,15 +100,15 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕↖️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘs ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🧞‍♀️ Search 🧐', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/LazyDeveloper')
+            InlineKeyboardButton('🧞‍♀️ Sᴇᴀʀᴄʜ ✪', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('✇ Uᴘᴅᴀᴛᴇs ✇', url='https://t.me/MOVIES_PROVIDE')
             ],[
-            InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
-            InlineKeyboardButton('♥️ About ♥️', callback_data='about')
-        ],[
-            InlineKeyboardButton('Watch Tutorial', url='https://youtube.com/LazyDeveloper')
+            InlineKeyboardButton('♻ Hᴇʟᴘ ♻', callback_data='help'),
+            InlineKeyboardButton('⍟ Aʙᴏᴜᴛ ⍟', callback_data='about')
+            ],[
+            InlineKeyboardButton('⌬ Mᴏᴠɪᴇs Rᴇϙᴜᴇsᴛ Gʀᴏᴜᴘ ⌬', url='https://t.me/MOVIES_PROVIDE2')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -384,7 +384,7 @@ async def delete_all_index(bot, message):
 @Client.on_callback_query(filters.regex(r'^autofilter_delete'))
 async def delete_all_index_confirm(bot, message):
     await Media.collection.drop()
-    await message.answer('♥️ Thank You LazyDeveloper ♥️')
+    await message.answer('♥️ MOVIES_PROVIDE ♥️')
     await message.message.edit('Succesfully Deleted All The Indexed Files.')
 
 
