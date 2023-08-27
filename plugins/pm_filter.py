@@ -335,7 +335,7 @@ async def next_page(bot, query):
 
     btn.insert(0,
         [ 
-	    InlineKeyboardButton(text="⚡Ꮋᴏᴡ Ͳᴏ Ꭰᴏᴡɴʟᴏᴀᴅ⚡", url='https://telegram.me/LazyDeveloper')
+	    InlineKeyboardButton(text="⁉️ How To Dwonload ⁉️", url='https://telegram.me/MOVIES_PROVIDE/11')
         ] 
     )
 
@@ -1467,7 +1467,7 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0,
         [ 
-	    InlineKeyboardButton(text="⚡Ꮋᴏᴡ Ͳo Ꭰᴏᴡɴʟᴏᴀᴅ⚡", url='https://telegram.me/LazyDeveloper'),
+	    InlineKeyboardButton(text="⁉️ How To Dwonload ⁉️", url='https://telegram.me/MOVIES_PROVIDE/11'),
         ] 
     )
     if offset != "":
